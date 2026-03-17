@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import {StarsCanvas} from "./ui/StarsCanvas";
+// import {StarsCanvas} from "./ui/StarsCanvas";
 
 
 
@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
       >
-        <StarsCanvas />
+        {/* <StarsCanvas /> */}
         {children}
       </body>
     </html>

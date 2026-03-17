@@ -20,7 +20,7 @@ const styles = {
 };
 
 // Default characters
-const DEFAULT_CHARACTERS = "quraibaissuparsecret";
+const DEFAULT_CHARACTERS = "huraiba_sudo_mode";
 
 export default function RotatingDecryptedText({
   texts = ["MERN Stack Developer", "Software Developer", "Founder HurayraCodes"],
@@ -30,7 +30,7 @@ export default function RotatingDecryptedText({
   characters = DEFAULT_CHARACTERS,
   className = "",
   parentClassName = "",
-  encryptedClassName = "opacity-70",
+  encryptedClassName = "opacity-50",
   animateOn = "view",
   rotationInterval = 3000,
 }) {
