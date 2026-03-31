@@ -4,12 +4,18 @@ import { Code, Github, Instagram, Linkedin } from "lucide-react";
 
 function Footer() {
   return (
-    <div>
-      <footer className="border-t border-white/10 relative bg-black overflow-hidden py-10 px-6 text-white">
-      <div>
+    <section className="p-10">
+      <div className="container text-neutral-300 flex sm:justify-between mx-auto justify-center items-center gap-10 max-sm:flex-col">
+        <p className="caption text-n-4 lg:block">
+         <span className="font-bold text-cyan-300">
+            {" { "}
+            Abu Hurayra 
+          {" } "}
+          </span> © {new Date().getFullYear()}. All rights reserved.
+        </p>
         {/* Social Links - Adjusted spacing */}
                     <div
-                      className="flex items-center gap-4 pt-2"
+                      className="flex gap-5 flex-wrap"
                     >
                       {[
                         {
@@ -46,18 +52,7 @@ function Footer() {
                       ))}
                     </div>
       </div>
-        {/* Divider */}
-        <div className="pt-6 text-right text-slate-200 text-lg">
-          © {new Date().getFullYear()}{" "}
-          <span className="font-bold text-cyan-300">
-            {" { "}
-            Abu Hurayra 
-          {" } "}
-          </span>
-          . All rights reserved.
-        </div>
-      </footer>
-    </div>
+      </section>
   );
 }
 

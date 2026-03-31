@@ -16,6 +16,20 @@
     margin-bottom: 1rem;
   }
 }
+.icon-hover{
+  transform: none;
+}
+.icon-hover:hover{
+  transform: translateY(-5);
+}
+.bg-Color{
+  background-color: #08090a;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
+}
 
 .glow {
   text-shadow:
@@ -23,26 +37,12 @@
     0 0 40px rgba(96, 165, 250, 0.4),
     0 0 60px rgba(96, 165, 250, 0.2);
 }
-
-.card {
-  background: linear-gradient(145deg, #1e1b4b, #2d1b69);
-  border: 1px solid rgba(99, 102, 241, 0.3);
-  box-shadow: 
-    0 8px 32px rgba(99, 102, 241, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+.text{
+  background-color: rgba(78, 24, 145, 0.454)
 }
-
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, transparent, rgba(59, 130, 246, 0.1), transparent);
-  opacity: 0;
-  transition: opacity 0.6s ease;
-  z-index: 0;
+.card {
+  border: 4px solid rgba(105, 6, 218, 0.884);
+    outline: none;
 }
 
 .group:hover .card::before {

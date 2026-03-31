@@ -1,3 +1,1 @@
-# Task: Make image in About.jsx more rounded\n\n## Steps:\n- [x] Step 1: Create TODO.md (current)\n- [x] Step 2: Edit app/sections/About.jsx to update DecayCard className for more rounded image\n- [ ] Step 3: Verify changes and complete task\n\n
-
-
+# TODO: Fix EmailJS Module Error\n\n## Steps:\n1. ✅ [DONE] Understand issue and create detailed plan\n2. Edit app/main/sections/Contect.jsx:\n   - Update emailjs import for v5\n   - Fix env vars to Next.js format\n   - Fix component structure (Contact/Contect mismatch, extra braces)\n   - Improve error handling\n3. Test form submission (requires user to set .env.local vars)\n4. Update dev server and verify no build errors\n5. ✅ [DONE] Complete task and cleanup TODO.md
