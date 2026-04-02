@@ -94,12 +94,12 @@ export function Testimonials() {
                 className={cn(
                   "relative flex items-center text-white gap-0 rounded-full cursor-pointer",
                   "transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]",
-                  isActive ? "bg-blue-600 shadow-lg" : "bg-transparent hover:text-gray-700 hover:bg-white",
+                  isActive ? "bg-linear-to-r from-blue-900 to-cyan-600 shadow-lg" : "bg-transparent hover:text-gray-700 hover:bg-white",
                   showName ? "pr-4 pl-2 py-2" : "p-0.5",
                 )}
               >
                 {/* Avatar with smooth ring animation */}
-                <div className="relative flex-shrink-0">
+                <div className="relative shrink-0">
                   <img
                     src={testimonial.avatar || "/placeholder.svg"}
                     alt={testimonial.author}

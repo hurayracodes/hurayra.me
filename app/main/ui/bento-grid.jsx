@@ -15,7 +15,7 @@ function BentoGrid({ items = expCards }) {
                     className={cn(
                         "group relative p-6 rounded-xl overflow-hidden transition-all duration-300",
                         "border border-gray-100/80 dark:border-white/10",
-                        "hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] dark:hover:shadow-[0_8px_30px_rgba(255,255,255,0.08)]",
+                        "hover:shadow-[0_8px_30px_rgba(0,0,0,0.9)] dark:hover:shadow-[0_8px_30px_rgba(255,255,255,0.07)]",
                         item.colSpan || "col-span-1",
                         item.colSpan === 2 ? "md:col-span-2" : "",
                         {
@@ -33,7 +33,7 @@ function BentoGrid({ items = expCards }) {
                                 : "opacity-0 group-hover:opacity-100"
                         } transition-opacity duration-300`}
                     >
-                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[length:4px_4px]" />
+                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[4px_4px]" />
                     </div>
 
                     <div className="relative flex flex-col h-full">
@@ -95,7 +95,7 @@ function BentoGrid({ items = expCards }) {
                     </div>
 
                     <div
-                        className={`absolute inset-0 -z-10 rounded-xl p-px bg-gradient-to-br from-white/5 via-transparent to-white/5 ${
+                        className={`absolute inset-0 -z-10 rounded-xl p-px bg-linear-to-br from-white/5 via-transparent to-white/5 ${
                             item.hasPersistentHover
                                 ? "opacity-100"
                                 : "opacity-0 group-hover:opacity-100"

@@ -78,7 +78,7 @@ function About() {
           <section className="relative flex flex-col items-center justify-center order-1 lg:order-2 w-full">
             <div className="relative flex justify-center items-center">
               {/* Image Container */}
-              <div className="relative hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] transition-all duration-300 cursor-grab w-50 h-50 sm:w-62 sm:h-62 md:w-70 md:h-70 group border-4 border-cyan-400/30 rounded-full">
+              <div className="relative transition-all duration-300 cursor-grab w-50 h-50 sm:w-62 sm:h-62 md:w-70 md:h-70 group border-4 border-cyan-400/30 rounded-full">
                 <img
                   src="/hurayracodes.png"
                   alt="Abu Hurayra"
@@ -89,7 +89,7 @@ function About() {
               {/* Social Icons - Below the image */}
               <div className="flex absolute -bottom-3 items-center justify-center gap-4 mt-6">
                 <a
-                  href="https://github.com/Abu-Hurayra"
+                  href="https://github.com/hurayracodes"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] transition-all duration-300 backdrop-blur-sm rounded-full bg-slate-950/20 border border-white/10 hover:border-cyan-400 text-slate-400 hover:text-cyan-200"
@@ -97,7 +97,7 @@ function About() {
                   <Github className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/abu-hurayra/"
+                  href="https://www.linkedin.com/in/hurayracodes/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] transition-all duration-300 backdrop-blur-sm rounded-full bg-slate-950/20 border border-white/10 hover:border-cyan-400 text-slate-400 hover:text-cyan-200"
@@ -105,7 +105,7 @@ function About() {
                   <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
                 <a
-                  href="mailto:abuhuraira@gmail.com"
+                  href="mailto:abuhuraira3912l@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] transition-all duration-300 backdrop-blur-sm rounded-full bg-slate-950/20 border border-white/10 hover:border-cyan-400 text-slate-400 hover:text-cyan-200"

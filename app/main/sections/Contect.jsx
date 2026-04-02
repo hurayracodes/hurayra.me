@@ -44,12 +44,12 @@ const Contact = () => {
       <main className="min-h-screen flex items-center justify-center flex-col pb-12 px-4 sm:px-6 lg:px-16">
         <div className="w-full max-w-2xl mx-auto mt-16">
           <div
-            style={{
-              background: "rgb(4,7,29)",
-              backgroundImage:
-                "linear-gradient(90deg, rgba(4, 7, 29, 0.95) 0%, rgba(12, 14, 35, 0.95) 100%)",
-              borderRadius: "0.75rem",
-            }}
+            // style={{
+            //   background: "rgb(4,7,29)",
+            //   backgroundImage:
+            //     "linear-gradient(90deg, rgba(4, 7, 29, 0.95) 0%, rgba(12, 14, 35, 0.95) 100%)",
+            //   borderRadius: "0.75rem",
+            // }}
             className="rounded-xl border border-gray-700 p-8 md:p-10"
           >
             <div className="text-center mb-8">
@@ -81,7 +81,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="What's your good name?"
                   required
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-gray-500 focus:ring-1 focus:ring-gray-500 transition-colors"
+                  className="w-full px-4 py-3 bg-gray-900/40 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-gray-500 focus:ring-1 focus:ring-gray-500 transition-colors"
                 />
               </div>
 
@@ -100,7 +100,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="What's your email address?"
                   required
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-gray-500 focus:ring-1 focus:ring-gray-500 transition-colors"
+                  className="w-full px-4 py-3 bg-gray-900/40 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-gray-500 focus:ring-1 focus:ring-gray-500 transition-colors"
                 />
               </div>
 
@@ -119,14 +119,14 @@ const Contact = () => {
                   placeholder="How can I help you?"
                   rows="5"
                   required
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-gray-500 focus:ring-1 focus:ring-gray-500 transition-colors resize-none"
+                  className="w-full px-4 py-3 bg-gray-900/40 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-gray-500 focus:ring-1 focus:ring-gray-500 transition-colors resize-none"
                 />
               </div>
 
               <button 
                 type="submit" 
                 disabled={loading} 
-                className="w-full mt-2 relative overflow-hidden rounded-lg bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full mt-2 relative overflow-hidden rounded-lg bg-linear-to-r from-blue-900 to-cyan-600 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <div className="relative flex items-center justify-center gap-2 py-3 px-6">
                   <span className="text-white font-medium">
