@@ -12,14 +12,29 @@
 
 ---
 
-# Abu Hurayra - Portfolio Website
+# 🚀 Abu Hurayra - Modern Next.js Portfolio
 
-A modern portfolio website built with Next.js 16, Three.js, GSAP, and Framer Motion.
+> **Build Debug Issues That Delivers Results** - A passionate Full Stack Developer who turns complex problems into simple, elegant solutions.
 
-**Live Demo:** https://hurayra.vercel.app  
-**YouTube Channel:** https://youtube.com/@hurayracodes
+🔴 **Live Demo:** [https://hurayra.vercel.app](https://hurayra.vercel.app)  
+📺 **YouTube Tutorial:** [@hurayracodes](https://youtube.com/@hurayracodes)
 
 ---
+
+---
+
+## ⚙️ Tech Stack
+
+| Category | Technologies |
+|----------|-------------|
+| **Framework** | Next.js 16, React 19 |
+| **Styling** | Tailwind CSS, clsx, tailwind-merge, CVA |
+| **Animations** | GSAP, Framer Motion, React Just Parallax |
+| **3D Graphics** | React Three Fiber, Three.js, Drei, Maath |
+| **UI Components** | Radix UI, Lucide React, React Icons |
+| **Email Service** | EmailJS |
+| **Theme** | next-themes |
+| **Hooks** | usehooks-ts |
 
 ## Tech Stack
 
