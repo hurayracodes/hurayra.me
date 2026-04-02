@@ -91,7 +91,7 @@ function Hero() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="text-gray-300 text-3xl tracking-wider max-w-3xl mx-auto md:text-xl font-medium"
+              className="text-gray-300 text-2xl max-w-3xl mx-auto md:text-xl"
             >
               A passionate Full Stack Developer who turns complex problems into
               simple, elegant solutions. I build web applications that users
