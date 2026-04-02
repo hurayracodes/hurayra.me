@@ -51,3 +51,18 @@
 ```bash
 git clone https://github.com/hurayracodes/hurayra.me.git
 cd hurayra.me
+npm install
+
+---
+###
+Environment Variables
+Create .env.local file:
+
+env
+VITE_APP_EMAILJS_SERVICE_ID=your_service_id
+VITE_APP_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_APP_EMAILJS_PUBLIC_KEY=your_public_key
+npm run dev
+Open your any Browser >  http://localhost:3000
+
+---
