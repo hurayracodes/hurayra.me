@@ -10,6 +10,8 @@
   
 </div>
 
+---
+
 # 🚀 Abu Hurayra - Modern Next.js Portfolio
 
 > **Build Debug Issues That Delivers Results** - A passionate Full Stack Developer who turns complex problems into simple, elegant solutions.
@@ -17,16 +19,24 @@
 🔴 **Live Demo:** [https://hurayra.vercel.app](https://hurayra.vercel.app)  
 📺 **YouTube Tutorial:** [@hurayracodes](https://youtube.com/@hurayracodes)
 
+
+---
+
 ## ⚙️ Tech Stack
 
 | Category | Technologies |
 |----------|-------------|
 | **Framework** | Next.js 16, React 19 |
-| **Styling** | Tailwind CSS |
-| **Animations** | GSAP, Framer Motion |
-| **3D Graphics** | Three.js, React Three Fiber |
-| **Email** | EmailJS |
+| **Styling** | Tailwind CSS, clsx, tailwind-merge, CVA |
+| **Animations** | GSAP, Framer Motion, React Just Parallax |
+| **3D Graphics** | React Three Fiber, Three.js, Drei, Maath |
+| **UI Components** | Radix UI, Lucide React, React Icons |
+| **Email Service** | EmailJS |
 | **Theme** | next-themes |
+| **Hooks** | usehooks-ts |
+
+
+---
 
 ## Quick Start
 
@@ -43,46 +53,16 @@ git clone https://github.com/hurayracodes/hurayra.me.git
 cd hurayra.me
 npm install
 
+---
+###
 Environment Variables
 Create .env.local file:
 
-bash
+env
 VITE_APP_EMAILJS_SERVICE_ID=your_service_id
 VITE_APP_EMAILJS_TEMPLATE_ID=your_template_id
 VITE_APP_EMAILJS_PUBLIC_KEY=your_public_key
-Run Development Server
-bash
 npm run dev
-Open http://localhost:3000 in your browser.
+Open your any Browser >  http://localhost:3000
 
-Build for Production
-bash
-npm run build
-npm start
-📧 EmailJS Setup
-Create account at EmailJS
-
-Add Email Service → Copy Service ID
-
-Create Email Template → Copy Template ID
-
-Go to Account → API Keys → Copy Public Key
-
-Add all keys to .env.local file
-
-🚀 Deploy on Vercel
-Push code to GitHub
-
-Go to Vercel
-
-Import your repository
-
-Add environment variables
-
-Click Deploy
-
-🙏 Support
-📺 YouTube: @hurayracodes
-🐛 Issues: GitHub Issues
-
-<div align="center"> Built with ❤️ by Abu Hurayra (HurayraCodes) </div> ``
+---
