@@ -13,7 +13,6 @@
 
 > **Build Debug Issues That Delivers Results** - A passionate Full Stack Developer who turns complex problems into simple, elegant solutions.
 
-🔴 **Live Demo:** [https://hurayra.vercel.app](https://hurayra.vercel.app)  
 📺 **YouTube Tutorial:** [@hurayracodes](https://youtube.com/@hurayracodes)
 
 
