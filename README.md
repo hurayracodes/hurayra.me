@@ -19,7 +19,6 @@
 🔴 **Live Demo:** [https://hurayra.vercel.app](https://hurayra.vercel.app)  
 📺 **YouTube Tutorial:** [@hurayracodes](https://youtube.com/@hurayracodes)
 
----
 
 ---
 
@@ -36,15 +35,6 @@
 | **Theme** | next-themes |
 | **Hooks** | usehooks-ts |
 
-## Tech Stack
-
-- Next.js 16
-- React 19
-- Tailwind CSS
-- GSAP & Framer Motion
-- Three.js & React Three Fiber
-- EmailJS
-- next-themes
 
 ---
 
