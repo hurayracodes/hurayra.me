@@ -5,9 +5,6 @@
   [![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)](https://hurayra.vercel.app)
   [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtube.com/@hurayracodes)
   [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/hurayracodes/hurayra.me)
-  [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
-  [![Three.js](https://img.shields.io/badge/Three.js-r183-black?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
-  
 </div>
 
 ---
