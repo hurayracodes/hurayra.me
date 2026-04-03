@@ -48,6 +48,9 @@ export function Testimonials() {
 
   return (
     <div className="flex flex-col items-center gap-10 py-16">
+      <div>
+
+      </div>
       {/* Quote Container */}
       <div className="relative px-8">
         <span className="absolute -left-2 -top-6 text-7xl font-serif text-slate-50 select-none pointer-events-none">
@@ -93,8 +96,8 @@ export function Testimonials() {
                 onMouseLeave={() => setHoveredIndex(null)}
                 className={cn(
                   "relative flex items-center text-white gap-0 rounded-full cursor-pointer",
-                  "transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]",
-                  isActive ? "bg-linear-to-r from-blue-900 to-cyan-600 shadow-lg" : "bg-transparent hover:text-gray-700 hover:bg-white",
+                  "transition-all duration-500 ease-in-out",
+                  isActive ? "bg-linear-to-r from-purple-900 to-cyan-700 shadow-lg" : "bg-transparent hover:text-gray-700 hover:bg-white",
                   showName ? "pr-4 pl-2 py-2" : "p-0.5",
                 )}
               >
@@ -104,8 +107,8 @@ export function Testimonials() {
                     src={testimonial.avatar || "/placeholder.svg"}
                     alt={testimonial.author}
                     className={cn(
-                      "w-8 h-8 rounded-full object-cover",
-                      "transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]",
+                      "w-9 h-9 rounded-full object-cover",
+                      "transition-all duration-500 ease-in-out",
                       isActive ? "ring-2 ring-background/30" : "ring-0",
                       !isActive && "hover:scale-105",
                     )}
@@ -114,7 +117,7 @@ export function Testimonials() {
 
                 <div
                   className={cn(
-                    "grid transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]",
+                    "grid transition-all duration-500 ease-in-out",
                     showName ? "grid-cols-[1fr] opacity-100 ml-2" : "grid-cols-[0fr] opacity-0 ml-0",
                   )}
                 >

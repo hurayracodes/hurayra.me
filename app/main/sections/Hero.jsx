@@ -2,9 +2,8 @@
 import { Code, Github, Linkedin, Instagram } from "lucide-react";
 import { motion } from "framer-motion";
 import RotatingDecryptedText from "../ui/DecryptedText";
+
 // import { StarsCanvas } from "../ui/StarsCanvas";
-// useRef no longer needed
-import { StarsCanvas } from "../ui/StarsCanvas";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -25,7 +24,7 @@ function Hero() {
   return (
     <div className="relative pt-6 overflow-hidden z-0 min-h-screen">
       {/* Stars Background */}
-      <StarsCanvas />
+      {/* <StarsCanvas /> */}
 
       <section className="relative min-h-screen flex items-center justify-center px-6 lg:px-10 text-white pt-20 pb-12 lg:pt-0 lg:pb-0 z-20">
         <motion.div
@@ -98,7 +97,7 @@ function Hero() {
               actually love to use.
             </motion.p>
             <div className="flex gap-3 justify-center items-center">
-              <button className="px-10 py-5 bg-linear-to-r from-blue-900 to-cyan-600 rounded-full text-white font-medium flex items-center gap-2 hover:opacity-90 transition-opacity text-lg sm:text-xl shadow-lg">
+               <button className="px-10 py-5 bg-linear-to-r from-purple-900 to-cyan-700 rounded-full text-white font-medium flex items-center gap-2 hover:opacity-90 transition-opacity text-lg sm:text-xl shadow-lg">
                 View Resume
               </button>{" "}
             </div>

@@ -9,14 +9,15 @@ export const navItems = [
 export const expCards = [
   {
     id: 1,
-    title: "Frontend Developer",
+    title: "Full Stack Developer",
     company: "Heapware Software Development",
-    date: "January 2023 - Present",
+    date: "June 2025 - Present",
     location: "Remote",
     logoPath: "/hurayracodes.png",
     responsibilities: [
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences."
-    ]
+      "Developed RESTful APIs and integrated third-party services.",
+      "Implemented authentication and authorization systems.",
+    ],
   },
   {
     id: 2,
@@ -27,39 +28,26 @@ export const expCards = [
     logoPath: "/hurayracodes.png",
     responsibilities: [
       "Delivered 15+ successful projects with 100% client satisfaction.",
-    ]
+    ],
   },
-  {
-    id: 3,
-    title: "Full Stack Developer",
-    company: "Tech Solutions Inc",
-    date: "June 2024 - Present",
-    location: "Remote",
-    logoPath: "/hurayracodes.png",
-    responsibilities: [
-      "Developed RESTful APIs and integrated third-party services.",
-      "Implemented authentication and authorization systems.",
-    ]
-  },
+  
   {
     id: 4,
     title: "Mobile App Developer",
     company: "Appwrite",
     date: "March 2024 - November 2024",
     location: "Remote",
-    review: "Hurayra's expertise in mobile development brought innovation and efficiency to our app development process.",
+    review:
+      "Hurayra's expertise in mobile development brought innovation and efficiency to our app development process.",
     logoPath: "/hurayracodes.png",
     responsibilities: [
       "Built cross-platform mobile apps with React Native.",
       "Implemented push notifications and real-time features.",
-      "Published apps to both App Store and Play Store.",
-      "Achieved 4.8+ star ratings on both platforms."
-    ]
-  }
+    ],
+  },
 ];
 
-
-export const contributions  = [
+export const contributions = [
   {
     id: 1,
     title: "Frontend Engineer Intern",
@@ -90,37 +78,41 @@ export const contributions  = [
   },
 ];
 
-
 export const projects = [
   {
     id: 1,
     title: "Food Delivery App | MERN",
-    description: "Problem solving platform with modern tech stack Problem solving platform with modern tech stack Problem solving platform with modern tech stack",
+    description:
+      "Problem solving platform with modern tech stack Problem solving platform with modern tech stack Problem solving platform with modern tech stack",
     duration: "Feb 2025 - Present",
     images: ["/project-img-1.png", "/project-img-2.png", "/project-img-3.png"],
     github: "https://github.com/hurayracodes/IsSolved",
-    website: "https://is-solved.hurayracodes.com"
+    website: "https://is-solved.hurayracodes.com",
+    tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"], // ✅ Tags added
   },
   {
     id: 2,
     title: "Digital Wallet valuable",
-    description: "Send/receive money using phone numbers with TurboRepo backend Problem solving platform with modern tech stack",
+    description:
+      "Send/receive money using phone numbers with TurboRepo backend Problem solving platform with modern tech stack",
     duration: "Dec 2024 - Present",
     images: ["/project-img-1.png", "/project-img-2.png", "/project-img-3.png"],
     github: "https://github.com/hurayracodes/wallet",
-    website: null
+    website: null,
+    tech: ["TurboRepo", "Node.js", "Express", "MongoDB", "JWT"], // ✅ Tags added
   },
   {
     id: 3,
     title: "3D Solar System with Threejs",
-    description: "Interactive 3D planets exploration with Three.js Problem solving platform with modern tech stack Problem solving platform with modern tech stack",
+    description:
+      "Interactive 3D planets exploration with Three.js Problem solving platform with modern tech stack Problem solving platform with modern tech stack",
     duration: "Jan 2025 - Mar 2025",
     images: ["/project-img-1.png", "/project-img-2.png", "/project-img-3.png"],
     github: "https://github.com/hurayracodes/solar-system",
-    website: "https://solar.hurayracodes.com"
-  }
+    website: "https://solar.hurayracodes.com",
+    tech: ["Three.js", "JavaScript", "HTML5", "CSS3", "WebGL"], // ✅ Tags added
+  },
 ];
-
 
 // ============== MY KEY SKILLS ==============
 export const mySkills = [
@@ -175,8 +167,27 @@ export const skillsData = [
 
 // Skills categories for cards
 export const cardSkills = {
-  "Frontend Engineer Intern": ["React.js", "Next.js", "Tailwind CSS", "TypeScript", "JavaScript"],
-  "Backend Engineer Intern": ["Node.js", "Express.js", "MongoDB", "PostgreSQL", "GraphQL"],
-  "Database": ["MongoDB", "PostgreSQL", "Docker", "AWS", "Firebase"],
-  "Lead Full Stack Developer": ["React.js", "Node.js", "TypeScript", "Git", "Vercel", "Redux"]
+  "Frontend Engineer Intern": [
+    "React.js",
+    "Next.js",
+    "Tailwind CSS",
+    "TypeScript",
+    "JavaScript",
+  ],
+  "Backend Engineer Intern": [
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "PostgreSQL",
+    "GraphQL",
+  ],
+  Database: ["MongoDB", "PostgreSQL", "Docker", "AWS", "Firebase"],
+  "Lead Full Stack Developer": [
+    "React.js",
+    "Node.js",
+    "TypeScript",
+    "Git",
+    "Vercel",
+    "Redux",
+  ],
 };

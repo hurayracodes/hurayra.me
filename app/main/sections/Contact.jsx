@@ -2,6 +2,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ArrowRight } from "lucide-react";
+// import { StarsCanvas } from "../ui/StarsCanvas";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -41,8 +42,18 @@ const Contact = () => {
 
   return (
     <div className="relative pt-10 overflow-hidden">
+      {/* <StarsCanvas /> */}
       <main className="min-h-screen flex items-center justify-center flex-col pb-12 px-4 sm:px-6 lg:px-16">
         <div className="w-full max-w-2xl mx-auto mt-16">
+          {/* Heading */}
+          <div className="mb-12 text-center">
+            <h2 className="text-white text-center text-2xl sm:text-3xl md:text-4xl font-bold mb-10">
+              Ready to take your digital{" "}
+              <span className="text-cyan-300">
+                presence to the next level?
+              </span>
+            </h2>
+          </div>
           <div
             // style={{
             //   background: "rgb(4,7,29)",
@@ -52,15 +63,6 @@ const Contact = () => {
             // }}
             className="rounded-xl border border-gray-700 p-8 md:p-10"
           >
-            <div className="text-center mb-8">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                Get In Touch
-              </h2>
-              <p className="text-gray-400">
-                I'd love to hear from you. Send me a message!
-              </p>
-            </div>
-
             <form
               ref={formRef}
               onSubmit={handleSubmit}
@@ -123,10 +125,10 @@ const Contact = () => {
                 />
               </div>
 
-              <button 
-                type="submit" 
-                disabled={loading} 
-                className="w-full mt-2 relative overflow-hidden rounded-lg bg-linear-to-r from-blue-900 to-cyan-600 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+              <button
+                type="submit"
+                disabled={loading}
+                className="w-full mt-2 relative overflow-hidden rounded-lg bg-linear-to-r from-purple-900 to-cyan-700 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <div className="relative flex items-center justify-center gap-2 py-3 px-6">
                   <span className="text-white font-medium">

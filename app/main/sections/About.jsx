@@ -30,7 +30,7 @@ function About() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start max-w-7xl mx-auto w-full">
           {/* Left side content */}
           <section className="space-y-5 font-normal text-justify order-2 lg:order-1 w-full tracking-tight text-base sm:text-lg">
-            <p className="text-lg font-mono text-cyan-200/79 animate-pulse duration-200">
+            <p className="text-lg font-mono text-gray-300">
               👋Welcome to my World, Nice to see you here.
             </p>
 
@@ -39,7 +39,7 @@ function About() {
               Developer started with Simple Ideas and now I am building complex
               web applications. I am fluent in classics like Javascript and a
               deep expertise in{" "}
-              <span className="text-cyan-200/60 font-mono underline">
+              <span className="text-gray-300 font-mono underline">
                 full-stack development
               </span>
             </p>
@@ -47,12 +47,12 @@ function About() {
             <p className="text-gray-400 text-sm md:text-base tracking-wide">
               I specialize transforming innovative ideas into reality. My skill
               spread out from dynamic frontend interfaces using{" "}
-              <span className=" font-mono underline text-cyan-200/55">
+              <span className=" font-mono underline text-gray-200">
                 React, Next.js, React.Native
               </span>{" "}
               to robust backend solutions with{" "}
-              <span className="underline font-mono text-cyan-200/60">
-                Node.js, Express, and MongoDB{" "}
+              <span className="underline font-mono text-gray-300">
+                Node.js, Express & MongoDB{" "}
               </span>
               with over 2+ years of experience in creating modern, responsive
               web solutions.
@@ -129,7 +129,7 @@ function About() {
                   <div className="bg-gray-800/50 p-2 rounded-lg">
                     <Briefcase className="w-5 h-5 text-blue-400" />
                   </div>
-                  <span className="text-sm">Computer Science Student at .....</span>
+                  <span className="text-sm">Heapware Software Tec. lhr</span>
                 </div>
 
                 <div className="flex items-center space-x-3">

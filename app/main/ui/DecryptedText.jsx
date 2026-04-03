@@ -20,10 +20,14 @@ const styles = {
 };
 
 // Default characters
-const DEFAULT_CHARACTERS = "huraiba_sudo_mode";
+const DEFAULT_CHARACTERS = "huraira_sudo_mode";
 
 export default function RotatingDecryptedText({
-  texts = ["MERN Stack Developer", "Software Developer", "Founder HurayraCodes"],
+  texts = [
+    "MERN Stack Developer",
+    "Software Developer",
+    "Founder HurayraCodes",
+  ],
   speed = 60,
   maxIterations = 40,
   revealDirection = "start",
@@ -38,7 +42,7 @@ export default function RotatingDecryptedText({
   const [isScrambling, setIsScrambling] = useState(false);
   const [revealedIndices, setRevealedIndices] = useState(new Set());
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+
   const containerRef = useRef(null);
   const intervalRef = useRef(null);
   const rotationIntervalRef = useRef(null);
@@ -62,109 +66,136 @@ export default function RotatingDecryptedText({
   }, []);
 
   // Shuffle text function
-  const shuffleText = useCallback((originalText, revealed) => {
-    if (!originalText) return "";
-    
-    return originalText
-      .split("")
-      .map((char, i) => {
-        if (char === " ") return " ";
-        if (revealed?.has(i)) return originalText[i];
-        // Make sure characters is an array or string
-        const charsArray = Array.isArray(characters) ? characters : characters.split('');
-        return charsArray[Math.floor(Math.random() * charsArray.length)];
-      })
-      .join("");
-  }, [characters]);
+  const shuffleText = useCallback(
+    (originalText, revealed) => {
+      if (!originalText) return "";
+
+      return originalText
+        .split("")
+        .map((char, i) => {
+          if (char === " ") return " ";
+          if (revealed?.has(i)) return originalText[i];
+          // Make sure characters is an array or string
+          const charsArray = Array.isArray(characters)
+            ? characters
+            : characters.split("");
+          return charsArray[Math.floor(Math.random() * charsArray.length)];
+        })
+        .join("");
+    },
+    [characters],
+  );
 
   // Start scrambling effect
-  const startScrambling = useCallback((textToScramble = texts[currentIndex]) => {
-    if (!textToScramble) return;
-    
-    cleanup();
-    setIsScrambling(true);
-    iterationsRef.current = 0; // Reset iterations
+  const startScrambling = useCallback(
+    (textToScramble = texts[currentIndex]) => {
+      if (!textToScramble) return;
 
-    // Don't reveal anything initially - start fully scrambled
-    const baseSet = new Set();
-    // Only preserve spaces initially
-    for (let i = 0; i < textToScramble.length; i++) {
-      const ch = textToScramble[i];
-      if (ch === " ") {
-        baseSet.add(i);
+      cleanup();
+      setIsScrambling(true);
+      iterationsRef.current = 0; // Reset iterations
+
+      // Don't reveal anything initially - start fully scrambled
+      const baseSet = new Set();
+      // Only preserve spaces initially
+      for (let i = 0; i < textToScramble.length; i++) {
+        const ch = textToScramble[i];
+        if (ch === " ") {
+          baseSet.add(i);
+        }
       }
-    }
-    
-    setRevealedIndices(baseSet);
-    setDisplayText(shuffleText(textToScramble, baseSet));
 
-    intervalRef.current = setInterval(() => {
-      setRevealedIndices((prev) => {
-        if (!textToScramble) {
-          cleanup();
-          return prev;
-        }
-        
-        // Check if we should continue
-        if (prev.size < textToScramble.length && iterationsRef.current < maxIterations) {
-          const nextSet = new Set(prev);
-          
-          // Add one new index based on direction
-          if (revealDirection === "start") {
-            // Find the next non-space character from start
-            for (let i = 0; i < textToScramble.length; i++) {
-              if (!nextSet.has(i) && textToScramble[i] !== " ") {
-                nextSet.add(i);
-                break;
-              }
-            }
-          } else if (revealDirection === "end") {
-            // Find the next non-space character from end
-            for (let i = textToScramble.length - 1; i >= 0; i--) {
-              if (!nextSet.has(i) && textToScramble[i] !== " ") {
-                nextSet.add(i);
-                break;
-              }
-            }
-          } else if (revealDirection === "center") {
-            // Alternate revealing from center outward
-            const center = Math.floor(textToScramble.length / 2);
-            let left = center;
-            let right = center;
-            
-            // Try to find next character to reveal
-            for (let offset = 0; offset < textToScramble.length; offset++) {
-              if (center - offset >= 0 && !nextSet.has(center - offset) && textToScramble[center - offset] !== " ") {
-                nextSet.add(center - offset);
-                break;
-              }
-              if (center + offset < textToScramble.length && !nextSet.has(center + offset) && textToScramble[center + offset] !== " ") {
-                nextSet.add(center + offset);
-                break;
-              }
-            }
+      setRevealedIndices(baseSet);
+      setDisplayText(shuffleText(textToScramble, baseSet));
+
+      intervalRef.current = setInterval(() => {
+        setRevealedIndices((prev) => {
+          if (!textToScramble) {
+            cleanup();
+            return prev;
           }
-          
-          setDisplayText(shuffleText(textToScramble, nextSet));
-          iterationsRef.current++;
-          
-          return nextSet;
-        } else {
-          // Animation complete
-          cleanup();
-          setIsScrambling(false);
-          setDisplayText(textToScramble);
-          return prev;
-        }
-      });
-    }, speed);
-  }, [currentIndex, texts, speed, revealDirection, maxIterations, shuffleText, cleanup]);
+
+          // Check if we should continue
+          if (
+            prev.size < textToScramble.length &&
+            iterationsRef.current < maxIterations
+          ) {
+            const nextSet = new Set(prev);
+
+            // Add one new index based on direction
+            if (revealDirection === "start") {
+              // Find the next non-space character from start
+              for (let i = 0; i < textToScramble.length; i++) {
+                if (!nextSet.has(i) && textToScramble[i] !== " ") {
+                  nextSet.add(i);
+                  break;
+                }
+              }
+            } else if (revealDirection === "end") {
+              // Find the next non-space character from end
+              for (let i = textToScramble.length - 1; i >= 0; i--) {
+                if (!nextSet.has(i) && textToScramble[i] !== " ") {
+                  nextSet.add(i);
+                  break;
+                }
+              }
+            } else if (revealDirection === "center") {
+              // Alternate revealing from center outward
+              const center = Math.floor(textToScramble.length / 2);
+              let left = center;
+              let right = center;
+
+              // Try to find next character to reveal
+              for (let offset = 0; offset < textToScramble.length; offset++) {
+                if (
+                  center - offset >= 0 &&
+                  !nextSet.has(center - offset) &&
+                  textToScramble[center - offset] !== " "
+                ) {
+                  nextSet.add(center - offset);
+                  break;
+                }
+                if (
+                  center + offset < textToScramble.length &&
+                  !nextSet.has(center + offset) &&
+                  textToScramble[center + offset] !== " "
+                ) {
+                  nextSet.add(center + offset);
+                  break;
+                }
+              }
+            }
+
+            setDisplayText(shuffleText(textToScramble, nextSet));
+            iterationsRef.current++;
+
+            return nextSet;
+          } else {
+            // Animation complete
+            cleanup();
+            setIsScrambling(false);
+            setDisplayText(textToScramble);
+            return prev;
+          }
+        });
+      }, speed);
+    },
+    [
+      currentIndex,
+      texts,
+      speed,
+      revealDirection,
+      maxIterations,
+      shuffleText,
+      cleanup,
+    ],
+  );
 
   // Handle text rotation
   const rotateToNextText = useCallback(() => {
     const nextIndex = (currentIndex + 1) % texts.length;
     setCurrentIndex(nextIndex);
-    
+
     // Small delay before starting new scramble for smooth transition
     setTimeout(() => {
       startScrambling(texts[nextIndex]);
@@ -175,9 +206,12 @@ export default function RotatingDecryptedText({
   useEffect(() => {
     if (animateOn === "view" || animateOn === "auto") {
       cleanupRotation();
-      rotationIntervalRef.current = setInterval(rotateToNextText, rotationInterval);
+      rotationIntervalRef.current = setInterval(
+        rotateToNextText,
+        rotationInterval,
+      );
     }
-    
+
     return () => cleanupRotation();
   }, [animateOn, rotationInterval, rotateToNextText, cleanupRotation]);
 
@@ -192,7 +226,7 @@ export default function RotatingDecryptedText({
             }
           });
         },
-        { threshold: 0.1 }
+        { threshold: 0.1 },
       );
 
       observer.observe(containerRef.current);
@@ -242,7 +276,7 @@ export default function RotatingDecryptedText({
     >
       {/* Screen reader only text for accessibility */}
       <span style={styles.srOnly}>{texts[currentIndex]}</span>
-      
+
       {/* Visual scrambled text */}
       <span aria-hidden="true">
         {(displayText || "").split("").map((char, index) => (

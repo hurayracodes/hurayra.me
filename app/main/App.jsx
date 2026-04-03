@@ -8,7 +8,7 @@ import Experience from "./sections/WorkExperience";
 // import Navigation from "./sections/Navigation";
 import Clients from "./sections/Clients";
 import SkillsSection from "./sections/SkillsSection";
-import Contect from "./sections/Contect";
+import Contect from "./sections/Contact";
 
 function App() {
   return (
@@ -17,9 +17,9 @@ function App() {
       <Hero />
       <About />
       <Experience />
+      <Projects />
       <Knowledge />
       <SkillsSection />
-      <Projects />
       <Clients />
       <Contect />
       <Footer />

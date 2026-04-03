@@ -1,7 +1,8 @@
 "use client";
 import { BentoGrid } from "../ui/bento-grid";
-import {expCards} from '../ui/Data';
+import { expCards } from "../ui/Data";
 import { motion } from "framer-motion";
+import TitleHeader from "../ui/TitleHeader";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -10,10 +11,11 @@ const fadeInUp = {
 
 function WorkExperience() {
   return (
-    <section id="work-experience" className="relative py-20 lg:py-32 overflow-hidden">
-       <h2 className="text-white text-center text-2xl sm:text-3xl md:text-4xl mb-20 font-bold">
-         My Professional Work Experience
-        </h2>
+    <section
+      id="work-experience"
+      className="relative py-20 lg:py-32 overflow-hidden"
+    >
+      <TitleHeader title="My Professional Work Experience" />
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <BentoGrid items={expCards} />
       </div>
