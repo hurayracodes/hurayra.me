@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-// import {StarsCanvas} from "./ui/StarsCanvas";
+import { Toaster } from "react-hot-toast";
 
 
 
@@ -16,6 +16,16 @@ export default function RootLayout({ children }) {
       >
         {/* <StarsCanvas /> */}
         {children}
+        <Toaster 
+          position="top-right"
+          reverseOrder={false}
+          toastOptions={{
+            style: {
+              background: '#363636',
+              color: '#fff',
+            },
+          }}
+        />
       </body>
     </html>
   );

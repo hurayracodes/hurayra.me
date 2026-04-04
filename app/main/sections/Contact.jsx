@@ -2,7 +2,8 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ArrowRight } from "lucide-react";
-// import { StarsCanvas } from "../ui/StarsCanvas";
+import toast from "react-hot-toast";
+
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -31,10 +32,28 @@ const Contact = () => {
       );
 
       setForm({ name: "", email: "", message: "" });
-      alert("Message sent successfully!");
+      (// ✅ Success Toast
+      toast.success("Message sent successfully! 🎉", {
+        duration: 4000,
+        position: "top-right",
+        icon: "✅",
+        style: {
+          background: "#10b981",
+          color: "#fff",
+        },
+      }));
     } catch (error) {
       console.error("EmailJS Error:", error);
-      alert("Failed to send message. Please try again.");
+       // ✅ Error Toast
+      toast.error("Failed to send message. Please try again!", {
+        duration: 4000,
+        position: "top-right",
+        icon: "❌",
+        style: {
+          background: "#ef4444",
+          color: "#fff",
+        },
+      });
     } finally {
       setLoading(false);
     }
