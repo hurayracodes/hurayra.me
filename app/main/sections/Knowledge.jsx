@@ -13,7 +13,7 @@ const textVariant = () => ({
 
 const Knowledge = () => {
   return (
-    <div className="relative pt-10 px-6 lg:px-16 overflow-hidden min-h-screen">
+    <div id="knowledge" className="relative pt-10 px-6 lg:px-16 overflow-hidden min-h-screen">
       {/* Header */}
       <motion.div
         variants={textVariant()}

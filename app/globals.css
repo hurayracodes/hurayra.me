@@ -15,6 +15,62 @@
     letter-spacing: -0.02em;
     margin-bottom: 1rem;
   }
+/* Mobile Responsive - For screens 486px and below */
+@media only screen and (max-width: 486px) {
+  
+  /* Main Heading Container */
+  .main-heading {
+    space-y: 0.5rem !important;
+  }
+  
+  /* Name Heading - "I'm Abu Hurayra" */
+  .name-heading {
+    font-size: 2rem !important; /* 32px */
+    line-height: 1.2 !important;
+  }
+  
+  /* Build and Rotating Text Container */
+  .main-heading h1:first-of-type {
+    font-size: 1.75rem !important; /* 28px */
+  }
+  
+  /* Build word */
+  .main-heading h1:nth-of-type(2) {
+    font-size: 1.5rem !important; /* 24px */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+  
+  /* Rotating Text */
+  .rotating-text {
+    font-size: 1.5rem !important; /* 24px */
+    display: inline-flex;
+  }
+  
+  .rotating-text span {
+    font-size: 1.5rem !important;
+  }
+  
+  /* "That" word */
+  .main-heading h1:nth-of-type(2) span:last-child {
+    font-size: 1.5rem !important;
+  }
+  
+  /* "Delivers Results" line */
+  .main-heading h1:last-of-type {
+    font-size: 1.5rem !important; /* 24px */
+  }
+  
+  /* Description Text */
+  .description-text {
+    font-size: 0.800rem !important; /* 14px */
+    line-height: 1.4 !important;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+}
 }
 .icon-hover{
   transform: none;

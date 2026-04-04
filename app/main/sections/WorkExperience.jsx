@@ -12,7 +12,7 @@ const fadeInUp = {
 function WorkExperience() {
   return (
     <section
-      id="work-experience"
+      id="experience"
       className="relative py-20 lg:py-32 overflow-hidden"
     >
       <TitleHeader title="My Professional Work Experience" />

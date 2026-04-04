@@ -5,7 +5,7 @@ import About from "./sections/About";
 import Knowledge from "./sections/Knowledge";
 import Projects from "./sections/Projects";
 import Experience from "./sections/WorkExperience";
-// import Navigation from "./sections/Navigation";
+import Navigation from "./sections/Navigation";
 import Clients from "./sections/Clients";
 import SkillsSection from "./sections/SkillsSection";
 import Contect from "./sections/Contact";
@@ -13,7 +13,7 @@ import Contect from "./sections/Contact";
 function App() {
   return (
     <div className="font-sans bg-linear-to-tr from-slate-900/5 to-slate-900/70">
-      {/* <Navigation /> */}
+      <Navigation />
       <Hero />
       <About />
       <Experience />

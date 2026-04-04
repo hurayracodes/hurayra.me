@@ -41,7 +41,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="relative pt-10 overflow-hidden">
+    <div className="relative pt-10 overflow-hidden" id="contact">
       {/* <StarsCanvas /> */}
       <main className="min-h-screen flex items-center justify-center flex-col pb-12 px-4 sm:px-6 lg:px-16">
         <div className="w-full max-w-2xl mx-auto mt-16">

@@ -131,11 +131,11 @@ className="sm:w-96 w-full"
           <h3 className="text-white font-bold text-[24px] line-clamp-1">{project.title}</h3>
           
           {/* Duration */}
-          if (project.duration) {
+          {project.duration && (
             <div className="flex items-center gap-1 text-gray-400 text-sm mt-1">
               <Calendar className="w-3.5 h-3.5" />
               <span>{project.duration}</span>
-            </div>
+            </div>)
           }
           
           <p className="mt-2 text-gray-400 text-[14px] leading-relaxed line-clamp-3">

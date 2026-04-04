@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import MultiOrbitSemiCircle from '../ui/MultiOrbitSemiCircle';
+import MultiOrbitSemiCircle from '../ui/Skillboxs';
 import { motion } from 'framer-motion';
 
 export default function SkillsSection() {

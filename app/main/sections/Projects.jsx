@@ -17,7 +17,7 @@ const textVariant = () => ({
 
 export default function Projects() {
   return (
-    <div className="py-16 px-4">
+    <div id="projects" className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <TitleHeader title="A small selection of my recent projects" />
