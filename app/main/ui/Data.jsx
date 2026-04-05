@@ -1,8 +1,10 @@
-export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Clients", link: "#Clients" },
-  { name: "Contact", link: "#contact" },
+export const navigationItems = [
+  { name: "Home", href: "#hero", description: "" },
+  { name: "About", href: "#about", description: "" },
+  { name: "Projects", href: "#projects", description: "" },
+  { name: "Knowledge", href: "#knowledge", description: "" },
+  { name: "Clients", href: "#clients", description: "" },
+  { name: "Contact", href: "#contact", description: "" },
 ];
 
 // src/components/ui/Data.jsx
@@ -113,81 +115,17 @@ export const projects = [
     tech: ["Three.js", "JavaScript", "HTML5", "CSS3", "WebGL"], // ✅ Tags added
   },
 ];
-
-// ============== MY KEY SKILLS ==============
-export const mySkills = [
-  {
-    category: "Frontend",
-    skills: [
-      "React.js",
-      "Next.js",
-      "TypeScript",
-      "JavaScript",
-      "Tailwind CSS",
-      "HTML5/CSS3",
-    ],
-  },
-  {
-    category: "Backend",
-    skills: ["Node.js", "Express.js", "Python", "REST APIs", "GraphQL"],
-  },
-  {
-    category: "Database",
-    skills: ["MongoDB", "PostgreSQL", "Firebase", "MySQL"],
-  },
-  {
-    category: "Tools & Others",
-    skills: ["Git", "Docker", "AWS", "Vercel", "Netlify", "Figma"],
-  },
-];
-
-// Data.jsx mein yeh add karo
 export const skillsData = [
-  { name: "React.js", icon: "Braces", color: "#61DAFB" },
-  { name: "Next.js", icon: "Code2", color: "#FFFFFF" },
-  { name: "Node.js", icon: "Server", color: "#339933" },
-  { name: "Express.js", icon: "FileCode", color: "#FFFFFF" },
-  { name: "MongoDB", icon: "Database", color: "#47A248" },
-  { name: "PostgreSQL", icon: "Database", color: "#4169E1" },
-  { name: "JavaScript", icon: "Braces", color: "#F7DF1E" },
-  { name: "TypeScript", icon: "Braces", color: "#3178C6" },
-  { name: "Tailwind CSS", icon: "Palette", color: "#06B6D4" },
-  { name: "Git", icon: "GitBranch", color: "#F05032" },
-  { name: "GitHub", icon: "Github", color: "#FFFFFF" },
-  { name: "VS Code", icon: "Terminal", color: "#007ACC" },
-  { name: "Vercel", icon: "Cloud", color: "#FFFFFF" },
-  { name: "Docker", icon: "Container", color: "#2496ED" },
-  { name: "AWS", icon: "CloudCog", color: "#FF9900" },
-  { name: "Firebase", icon: "Database", color: "#FFCA28" },
-  { name: "Redux", icon: "Workflow", color: "#764ABC" },
-  { name: "Figma", icon: "Figma", color: "#F24E1E" },
-  { name: "GraphQL", icon: "Code", color: "#E10098" },
-  { name: "Python", icon: "Code", color: "#3776AB" },
+  { name: "Next.js", icon: "/icons/nextjs.svg", color: "#FFFFFF" },
+  { name: "JavaScript", icon: "/icons/javascript.svg", color: "#F7DF1E" },
+  { name: "Express.js", icon: "/icons/express.svg", color: "#FFFFFF" },
+  { name: "React.js", icon: "/icons/reactjs.svg", color: "#61DAFB" },
+  { name: "Node.js", icon: "/icons/nodejs.svg", color: "#339933" },
+  { name: "MongoDB", icon: "/icons/mongodb.svg", color: "#47A248" },
+  { name: "TypeScript", icon: "/icons/typescript.svg", color: "#3178C6" },
+  { name: "Tailwind CSS", icon: "/icons/tailwind.svg", color: "#06B6D4" },
+  { name: "Git", icon: "/icons/git.svg", color: "#F05032" },
+  { name: "VS Code", icon: "/icons/vscode.svg", color: "#007ACC" },
+  { name: "GitHub", icon: "/icons/github.svg", color: "#FFFFFF" },
+  { name: "Vercel", icon: "/icons/vercel.svg", color: "#FFFFFF" },
 ];
-
-// Skills categories for cards
-export const cardSkills = {
-  "Frontend Engineer Intern": [
-    "React.js",
-    "Next.js",
-    "Tailwind CSS",
-    "TypeScript",
-    "JavaScript",
-  ],
-  "Backend Engineer Intern": [
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "PostgreSQL",
-    "GraphQL",
-  ],
-  Database: ["MongoDB", "PostgreSQL", "Docker", "AWS", "Firebase"],
-  "Lead Full Stack Developer": [
-    "React.js",
-    "Node.js",
-    "TypeScript",
-    "Git",
-    "Vercel",
-    "Redux",
-  ],
-};

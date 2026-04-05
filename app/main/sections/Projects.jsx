@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { ProjectCard } from "../ui/ProjectCard";
 import { projects } from "../ui/Data";
 import TitleHeader from "../ui/TitleHeader";

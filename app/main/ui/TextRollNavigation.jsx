@@ -2,17 +2,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { navigationItems } from "./Data";
 
 const cn = (...arr) => arr.filter(Boolean).join(" ");
-
-const navigationItems = [
-  { name: "Home", href: "#hero", description: "" },
-  { name: "About", href: "#about", description: "" },
-  { name: "Projects", href: "#projects", description: "" },
-  { name: "Knowledge", href: "#knowledge", description: "" },
-  { name: "Clients", href: "#clients", description: "" },
-  { name: "Contact", href: "#contact", description: "" },
-];
 
 const STAGGER = 0.035;
 

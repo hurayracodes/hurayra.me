@@ -2,21 +2,9 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import {skillsData} from '../ui/Data';
 
-const skillsData = [
-  { name: "Next.js", icon: "/icons/nextjs.svg", color: "#FFFFFF" },
-  { name: "JavaScript", icon: "/icons/javascript.svg", color: "#F7DF1E" },
-  { name: "Express.js", icon: "/icons/express.svg", color: "#FFFFFF" },
-  { name: "React.js", icon: "/icons/reactjs.svg", color: "#61DAFB" },
-  { name: "Node.js", icon: "/icons/nodejs.svg", color: "#339933" },
-  { name: "MongoDB", icon: "/icons/mongodb.svg", color: "#47A248" },
-  { name: "TypeScript", icon: "/icons/typescript.svg", color: "#3178C6" },
-  { name: "Tailwind CSS", icon: "/icons/tailwind.svg", color: "#06B6D4" },
-  { name: "Git", icon: "/icons/git.svg", color: "#F05032" },
-  { name: "VS Code", icon: "/icons/vscode.svg", color: "#007ACC" },
-  { name: "GitHub", icon: "/icons/github.svg", color: "#FFFFFF" },
-  { name: "Vercel", icon: "/icons/vercel.svg", color: "#FFFFFF" },
-];
+
 
 export default function SkillCards() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
