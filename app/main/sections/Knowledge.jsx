@@ -22,7 +22,9 @@ const Knowledge = () => {
         viewport={{ once: true }}
       >
         {/* Heading */}
-        <TitleHeader title="How I Can Contribute & My Key Skills" />
+        <TitleHeader title="How I Can Contribute " 
+        subTitle="& My Key Skills"
+        />
       </motion.div>
       <div className="max-w-7xl mx-auto w-full">
         <div className="min-h-screen flex flex-col items-center justify-center text-white pb-12">

@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ArrowRight } from "lucide-react";
 import toast from "react-hot-toast";
-
+import TitleHeader from "../ui/TitleHeader";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -32,7 +32,7 @@ const Contact = () => {
       );
 
       setForm({ name: "", email: "", message: "" });
-      (// ✅ Success Toast
+      // ✅ Success Toast
       toast.success("Message sent successfully! 🎉", {
         duration: 4000,
         position: "top-right",
@@ -41,10 +41,10 @@ const Contact = () => {
           background: "#10b981",
           color: "#fff",
         },
-      }));
+      });
     } catch (error) {
       console.error("EmailJS Error:", error);
-       // ✅ Error Toast
+      // ✅ Error Toast
       toast.error("Failed to send message. Please try again!", {
         duration: 4000,
         position: "top-right",
@@ -57,7 +57,6 @@ const Contact = () => {
     } finally {
       setLoading(false);
     }
-    
   };
 
   return (
@@ -65,15 +64,10 @@ const Contact = () => {
       {/* <StarsCanvas /> */}
       <main className="min-h-screen flex items-center justify-center flex-col pb-12 px-4 sm:px-6 lg:px-16">
         <div className="w-full max-w-2xl mx-auto mt-16">
-          {/* Heading */}
-          <div className="mb-12 text-center">
-            <h2 className="text-white text-center text-2xl sm:text-3xl md:text-4xl font-bold mb-10">
-              Ready to take your digital{" "}
-              <span className="text-cyan-300">
-                presence to the next level?
-              </span>
-            </h2>
-          </div>
+          <TitleHeader
+            title="Work With Me Let's bring your"
+            subTitle=" ideas to life"
+          />
           <div
             // style={{
             //   background: "rgb(4,7,29)",

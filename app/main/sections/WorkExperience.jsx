@@ -15,7 +15,9 @@ function WorkExperience() {
       id="experience"
       className="relative py-20 lg:py-32 overflow-hidden"
     >
-      <TitleHeader title="My Professional Work Experience" />
+      <TitleHeader title="My Professional"
+      subTitle=" Work Experience"
+      />
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <BentoGrid items={expCards} />
       </div>
